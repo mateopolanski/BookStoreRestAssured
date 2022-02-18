@@ -58,7 +58,7 @@ public class APIStatusTest {
     public void getApiServiceStatusGWT(){
 
         given()
-                .when().get(RestAssured.baseURI = "https://simple-books-api.glitch.me/status")
+                .when().get("https://simple-books-api.glitch.me/status")
                 .then()
                 .statusCode(200).statusLine(statusOK).assertThat().body(equalTo(jsonValidation));
 
