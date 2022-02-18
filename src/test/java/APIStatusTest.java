@@ -49,6 +49,11 @@ public class APIStatusTest {
         String statusLine = response.getStatusLine();
         Assertions.assertEquals(statusLine, statusOK);
     }
+    
+    
+    
+//same test below but using shorthand RestAssured Methods
+    
     @Test
     public void getApiServiceStatusGWT(){
 
