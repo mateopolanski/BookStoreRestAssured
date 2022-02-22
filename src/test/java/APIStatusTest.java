@@ -18,22 +18,4 @@ public class APIStatusTest {
                 .statusCode(200).statusLine(statusOK).assertThat().body(equalTo(jsonValidation));
 
     }
-
-    /*
-    2.
-    //architektura
-    - wzorzec projektowy ( dla przykladu - utils, models itd):
-    - np dekorator, builder, most itd.
-    --> url
-    --> asercje
-    --> serializacja, deserializacja
-    --> pattern
-    1.
-    -->send http dla BDD
-    -->poprawic na send request (create)
-
-
-
-
-     */
 }
