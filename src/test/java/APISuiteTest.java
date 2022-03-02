@@ -7,15 +7,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import user.RandomUserAsJson;
 import utilities.Generators;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 
 
 public class APISuiteTest extends BaseTest {
-//
-//
+
+
     String statusOK = "HTTP/1.1 200 OK";
     String jsonValidation = "{\"status\":\"OK\"}";
     RandomUserAsJson user1 = new RandomUserAsJson();
@@ -37,45 +36,9 @@ public class APISuiteTest extends BaseTest {
     @Test
     public void authenticate() {
 
-//
-////===========================================================================================================
-////        JSONObject jsonObj = new JSONObject();
-////        jsonObj.put("clientName", testName);
-////        jsonObj.put("clientEmail", testEmail);
-////        String jsonStr = jsonObj.toString();
-////
-////
-////        given().contentType(ContentType.JSON)
-////                .body(jsonObj.getJSONObject(jsonStr))
-////                .when().post("https://simple-books-api.glitch.me/api-clients/")
-////                .then()
-////                .statusCode((HttpStatus.SC_ACCEPTED));
-//
-////        response = httpRequest.request(Method.POST);
-////===========================================================================================================
-//
-//
-//
-////        given()
-////                .contentType(ContentType.JSON)
-////       //         .body(user1.mapToJson())
-////                .body("{\"clientEmail\":\"OK@gmail.com\", \"clientName\":\"OKClient\"}")
-////                .when().post("https://simple-books-api.glitch.me/api-clients/")
-////                .then()
-////                .statusCode(HttpStatus.SC_CONFLICT);
-//
-////        given()
-////                .contentType(ContentType.JSON)
-////                //         .body(user1.mapToJson())
-////                .body("{\"clientEmail\":\"OK@gmail.com\", \"clientName\":\"OKClient\"}")
-////                .when().post("https://simple-books-api.glitch.me/api-clients/")
-////                .then()
-////                .statusCode(HttpStatus.SC_CONFLICT);
-//
-//
         RestAssured.baseURI = baseURL;
         httpRequest = RestAssured.given();
-//
+
         JSONObject jsonObj = new JSONObject();
         jsonObj.put("clientName", testName);
         jsonObj.put("clientEmail", testEmail);
@@ -93,11 +56,6 @@ public class APISuiteTest extends BaseTest {
 
         System.out.println("Oauth Token extracted is: " + accessToken);
 
-
-//        String token = responseBody.toString();
-//        String token2 = token.substring("accessToken".length()).trim();
-//        System.out.println("TOKEN 2: -->  " +token2);
-//        System.out.println("TOKEN GIVEN: "+ token);
         Assertions.assertTrue(responseBody.contains("accessToken"));
         int status = response.getStatusCode();
         Assertions.assertEquals(status, HttpStatus.SC_CREATED);
@@ -131,14 +89,13 @@ public class APISuiteTest extends BaseTest {
         given().when().get(baseURL+ "/books/2")
                 .then().statusCode(HttpStatus.SC_OK).body(containsString("id"));
 
-//        String responseBody = response.getBody().asString();
-//        System.out.println(responseBody);
+
     }
 
     @Test
     public void createANewOrder (){
 
-//        given().header("Bearer"+ acce)
+
 
     }
     @Test
