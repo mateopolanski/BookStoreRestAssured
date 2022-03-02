@@ -21,6 +21,7 @@ public class APISuiteTest extends BaseTest {
 
     String testName = Generators.genName();
     String testEmail = Generators.genEmail();
+    String authToken;
 
 
     @Test
@@ -51,12 +52,15 @@ public class APISuiteTest extends BaseTest {
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
 
-        JSONObject jsonObject = new JSONObject(response.getBody().asString());
-        String accessToken = jsonObject.get("accessToken").toString();
+        JSONObject jsonResponse = new JSONObject(response.getBody().asString());
+        String accessToken = jsonResponse.get("accessToken").toString();
+        authToken = accessToken;
 
         System.out.println("Oauth Token extracted is: " + accessToken);
+        System.out.println("authToken = " + authToken);
 
         Assertions.assertTrue(responseBody.contains("accessToken"));
+
         int status = response.getStatusCode();
         Assertions.assertEquals(status, HttpStatus.SC_CREATED);
 
@@ -93,9 +97,28 @@ public class APISuiteTest extends BaseTest {
     }
 
     @Test
-    public void createANewOrder (){
+    public void createANewOrder () {
 
+//        ValidatableResponse response = given().header("Authorization", "Bearer " + authToken)
+//                .when().get(baseURL + "/orders").then();
+//        response.toString();
+//        System.out.println(response);
 
+        RestAssured.baseURI = baseURL;
+        httpRequest = RestAssured.given();
+
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("bookId", "1");
+        requestParams.put("customerName", "Mati");
+
+        httpRequest.header("Content-Type", "application/json");
+        httpRequest.header("Authorization", "Bearer" + authToken);
+        httpRequest.body(requestParams.toString());
+
+        response = httpRequest.post("/orders");
+        String responseBody = response.getBody().asString();
+        System.out.println(responseBody);
+        System.out.println("The status received: " + response.statusLine());
 
     }
     @Test
