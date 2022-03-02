@@ -91,7 +91,7 @@ public class APISuiteTest extends BaseTest {
         JSONObject jsonObject = new JSONObject(response.getBody().asString());
         String accessToken = jsonObject.get("accessToken").toString();
 
-        System.out.println("Oauth Token with type " + accessToken);
+        System.out.println("Oauth Token extracted is: " + accessToken);
 
 
 //        String token = responseBody.toString();
@@ -135,10 +135,25 @@ public class APISuiteTest extends BaseTest {
 //        System.out.println(responseBody);
     }
 
-    public void createAnOrder (){
+    @Test
+    public void createANewOrder (){
 
 //        given().header("Bearer"+ acce)
 
     }
+    @Test
+    public void getAnExistingOrder (){}
+
+    @Test
+    public void getAnExistingSingleOrder (){}
+
+    @Test
+    public void getAnExistingAllOrders (){}
+
+    @Test
+    public void UpdateAnExistingOrder (){}
+
+    @Test
+    public void DeleteAnExistingOrder (){}
 
 }
