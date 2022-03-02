@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="APIStatusTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-18T13:51:40" hostname="EP-5CG109274B" time="2.688">
+<testsuite name="APIStatusTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-02T08:15:26" hostname="EPPLGDAW0416" time="1.764">
   <properties/>
-  <testcase name="getApiServiceStatusGWT()" classname="APIStatusTest" time="2.688"/>
+  <testcase name="listAllFictionBooks()" classname="APIStatusTest" time="1.764"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -13,9 +13,9 @@ BDD SCENARIO:
 
 Scenario: Check Status of API
 
-Given User Want to check Status of API Service by 'status' endpoint
+Given user Want to check Status of API Service by 'status' endpoint
 
-When User Sends a GET HTTP request
+When user Sends a GET HTTP request
 
-Then User receive valid Response with code 200.
+Then user receive valid Response with code 200.
 
