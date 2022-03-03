@@ -37,8 +37,12 @@ public class APISuiteTest extends BaseTest {
             "  \"clientName\": \"Admin\",\n" +
             "  \"clientEmail\": \"a@wp.pl\"\n" +
             "}";
+    String hardcodedData = "{\n" +
+            "  \"clientName\": \"Admin1234test\",\n" +
+            "  \"clientEmail\": \"testa123@wp.pl\"\n" +
+            "}";
 
-    String orderId = "psi58sOKNJmdZWaWl7Mbu";
+    String orderId = "dbvfXtvNBBdYZY6LWSrqd";
     String orderIdNegTestCases ="I8vGpyG_jxMV4AvB3L6Xv";
 
     //---------------------------------------------------------------------------
@@ -87,6 +91,23 @@ public class APISuiteTest extends BaseTest {
         Assertions.assertTrue(responseBody.contains("accessToken"));
         int status = response.getStatusCode();
         Assertions.assertEquals(status, HttpStatus.SC_CREATED);
+    }
+
+    @Test
+    public void authenticateWithHardcodedData (){
+
+        given()
+                .header("Content-type", "application/json")
+                .when()
+                .body(hardcodedData)
+                .and()
+                .post(baseURL+ "/api-clients/")
+                .then()
+                .statusCode(HttpStatus.SC_CREATED)
+                .body("accessToken", matchesRegex("^[A-Fa-f0-9]{64}$"))
+                .extract()
+                .response()
+                .prettyPrint();
     }
 
     @Test
