@@ -1,0 +1,284 @@
+{
+;    "error": "This book is not in stock. Try again later."
+}
+{
+-    "error": "Missing Authorization header."
+}
+
+[
+    {
+        "id": 1,
+        "name": "The Russian",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 3,
+&        "name": "The Vanishing Half",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 4,
+(        "name": "The Midnight Library",
+        "type": "fiction",
+        "available": true
+    },
+    {
+        "id": 6,
+)        "name": "Viscount Who Loved Me",
+        "type": "fiction",
+        "available": true
+    }
+]
+{
+-    "error": "Missing Authorization header."
+}
+{
+    "status": "OK"
+}
+{
+)    "error": "No order with id test123."
+}
+	{
+	-    "error": "Missing Authorization header."
+	}
+
+{
+
+E    "error": "API client already registered. Try a different email."
+
+}
+{
+-    "error": "Missing Authorization header."
+}
+{
+V    "accessToken": "e98d0b92c7c6b840cb6c0c53178ea20600d60455648f2d4ea109b1aa2b0f73d9"
+}
+{
+-    "error": "Missing Authorization header."
+}
+{
+"    "error": "No book with id 99"
+}
+{
+7    "error": "No order with id 7lQbJ94wQYdZbDiprzF8i."
+}
+{
+    "created": true,
+'    "orderId": "1w394oXR3MSXi6IPbtNqg"
+}
+{
+_    "error": "Invalid value for query parameter 'type'. Must be one of: fiction, non-fiction."
+}
+[
+    {
+        "id": 2,
+         "name": "Just as I Am",
+        "type": "non-fiction",
+        "available": false
+    },
+    {
+        "id": 5,
+        "name": "Untamed",
+        "type": "non-fiction",
+        "available": true
+    }
+]
+{
+7    "error": "No order with id 7lQbJ94wQYdZbDiprzF8i."
+}
+{
+#    "id": "w4kENIvfUOAs9bGpB9yPO",
+    "bookId": 1,
+(    "customerName": "Changed Customer",
+U    "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+    "quantity": 1,
+    "timestamp": 1646298673851
+}
+{
+)    "error": "No order with id test123."
+}
+[
+    {
+'        "id": "q4S6rvLK89bQ4day_kQvJ",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646247748241
+    },
+    {
+'        "id": "sjoqhhZtidQYe5ukZ1dnp",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646247799083
+    },
+    {
+'        "id": "tVbfubCMsH-EqlYIaaAGc",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646247818948
+    },
+    {
+'        "id": "n-KTTZJVShA2dd_Z4uvDo",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646247929007
+    },
+    {
+'        "id": "cM7ZcI8iOpClzi5dRCqUL",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646248074990
+    },
+    {
+'        "id": "HREh8Hek28Ci6aEaUoLyk",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646248126553
+    },
+    {
+'        "id": "hBM0MapmRspiTc5Cnkrvy",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646248231743
+    },
+    {
+'        "id": "dWBUCejkkAIhhGbkbDUcC",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646249143007
+    },
+    {
+'        "id": "wYiUefJtPR2s07zTlDH2M",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646249156051
+    },
+    {
+'        "id": "fHGprL1FqDE_T-6cmvdkw",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646249308834
+    },
+    {
+'        "id": "I8vGpyG_jxMV4AvB3L6Xv",
+        "bookId": 1,
+,        "customerName": "Changed Customer",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646292080203
+    },
+    {
+'        "id": "OfkURVVIppANAE7k-Nrfa",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646292973737
+    },
+    {
+'        "id": "-7jIU7VUViJtmzrQhKrdO",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646294015680
+    },
+    {
+'        "id": "ph9a9oJY5FCQw-o53JLaV",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646294048327
+    },
+    {
+'        "id": "nUvLmmoeSJmiBMLy0Sv9L",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646294108647
+    },
+    {
+'        "id": "UdayZXfsZzRIcESpdAcIK",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646294534378
+    },
+    {
+'        "id": "ZeA3aECKVaBwbzQZ-TyuD",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646298335139
+    },
+    {
+'        "id": "m4Q3_c4RNIjMhLfVXgsd6",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646298501908
+    },
+    {
+'        "id": "B6lLZJRdYoVIYxEYGGzx8",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646298635813
+    },
+    {
+'        "id": "w4kENIvfUOAs9bGpB9yPO",
+        "bookId": 1,
+,        "customerName": "Changed Customer",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646298673851
+    },
+    {
+'        "id": "1w394oXR3MSXi6IPbtNqg",
+        "bookId": 1,
+         "customerName": "John",
+Y        "createdBy": "63ae4bbd942ad8da5fbd6c792a4d3d30e5231fdb61a8897cc08f1ac808d10ab0",
+        "quantity": 1,
+#        "timestamp": 1646298735361
+    }
+]
+
+{
+V    "accessToken": "194786c8d3fa5396f5857b607f6113042b7de5f6c56bd88885350e7ad6e60bfa"
+}
+{
+V    "accessToken": "194786c8d3fa5396f5857b607f6113042b7de5f6c56bd88885350e7ad6e60bfa"
+}
+Current AuthToken : null
+\Oauth Token extracted is: 194786c8d3fa5396f5857b607f6113042b7de5f6c56bd88885350e7ad6e60bfa
+TauthToken= Bearer 194786c8d3fa5396f5857b607f6113042b7de5f6c56bd88885350e7ad6e60bfa
+{
++    "error": "No order with id unknownId."
+}
